@@ -2,16 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Router from './routes/router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <header>
+      <navbar>
+      <ul>
+        <li><a href="/">Index</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/logement">Logements</a></li>
+        <li><a href="/notavalidadress">notavalidadress</a></li>
+      </ul>
+      </navbar>
+    </header>
+
+    <Router />
+
+    <footer>
+      <p>use of term</p>
+    </footer>
+
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export default App;
