@@ -15,3 +15,6 @@ code {
   max-width: 1240px;
   margin: auto;
 }
+#page header div {
+  min-height: calc(100vh - 277px);
+}
