@@ -14,6 +14,9 @@ code {
 #page {
   max-width: 1240px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 #page header div {
   min-height: calc(100vh - 277px);

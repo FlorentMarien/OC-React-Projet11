@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/police/static/Montserrat-Medium.ttf") format(truetype);
+}
+.container-banner {
+  width: 1240px;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 68.4px;
+  border-radius: 25px;
+  position: relative;
+}
+.container-banner,
+.container-banner img,
+.container-banner::after {
+  border-radius: 25px;
+}
+.container-banner img {
+  position: absolute;
+}
+.container-banner::after {
+  content: "";
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.container-banner p {
+  margin: 0;
+  z-index: 1;
+}

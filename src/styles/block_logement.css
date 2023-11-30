@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/police/static/Montserrat-Medium.ttf") format(truetype);
+}
+.container-logement {
+  width: 340px;
+  height: 340px;
+  background-color: rgba(255, 96, 96, 1);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 10px;
+}
+.-hidden {
+  visibility: hidden;
+}
+.container-logement::before {
+  content: "";
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+  position: absolute;
+  border-radius: 10px;
+}
+.container-logement-about {
+  width: 300px;
+  height: 52px;
+  line-height: 25.67px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Montserrat;
+  align-items: baseline;
+  margin-bottom: 20px;
+  z-index: 3;
+  color: white;
+}
+.container-logement-about p {
+  margin: 0;
+}

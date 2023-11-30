@@ -1,0 +1,9 @@
+.list-logement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  gap: 50px;
+}
