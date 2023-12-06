@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/police/static/Montserrat-Medium.ttf") format(truetype);
+}
+#section-logement {
+  gap: 20px;
+}
+#logement-carroussel {
+  width: 100%;
+  height: 643px;
+}
+#logement-carroussel img {
+  width: 100%;
+  height: 100%;
+}
+.logement-information {
+  display: flex;
+  font-family: Montserrat;
+  color: rgba(255, 96, 96, 1);
+  justify-content: space-between;
+}
+.logement-information-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51.34px;
+}
+.logement-information-location {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.67px;
+}
+.logement-information-container-host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logement-information-container-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+p {
+  margin: 0;
+}
+.logement-information-tag {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.tag-span {
+  background-color: rgba(255, 96, 96, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 115px;
+  height: 25px;
+  line-height: 19.86px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.logement-information-rating {
+  display: flex;
+  gap: 4px;
+}
+.logement-information-rating img {
+  width: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+}
