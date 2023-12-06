@@ -11,26 +11,28 @@ export default function Index() {
   let x = 0;
   return (
     <>
-      <div>
-        <Banner />
-      </div>
+      <section>
+        <div>
+          <Banner />
+        </div>
 
-      <div className="list-logement">
-        {mockeddata.map((element) => {
-          x++;
-          if (mockeddata.length % 3 === 2 && x === mockeddata.length) {
-            //Ajout element caché pour l'alignement via flex
-            return (
-              <>
-                <Block_Logement data={element} />
-                <Block_Logement data={element} hidden={true} />
-              </>
-            );
-          } else {
-            return <Block_Logement data={element} />;
-          }
-        })}
-      </div>
+        <div className="list-logement">
+          {mockeddata.map((element) => {
+            x++;
+            if (mockeddata.length % 3 === 2 && x === mockeddata.length) {
+              //Ajout element caché pour l'alignement via flex
+              return (
+                <>
+                  <Block_Logement data={element} />
+                  <Block_Logement data={element} hidden={true} />
+                </>
+              );
+            } else {
+              return <Block_Logement data={element} />;
+            }
+          })}
+        </div>
+      </section>
     </>
   );
 }

@@ -18,6 +18,11 @@ code {
   flex-direction: column;
   gap: 50px;
 }
-#page header div {
-  min-height: calc(100vh - 277px);
+#page header + section {
+  min-height: calc(100vh - 377px);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }

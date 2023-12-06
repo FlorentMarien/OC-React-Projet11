@@ -1,9 +1,10 @@
+import "./../styles/errorpage.css";
 export default function ErrorPage() {
-
   return (
-    <div id="error-page">
-      <h1>404 Not found</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-    </div>
+    <section id="error-page">
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <a href="/">Retourner sur la page d'accueil</a>
+    </section>
   );
 }
