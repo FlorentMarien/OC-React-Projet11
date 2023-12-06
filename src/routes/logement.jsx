@@ -1,4 +1,5 @@
 import "./../styles/logement.css";
+import Input_list from "../components/input_list";
 import mockeddata from "./../assets/data/logements.json";
 import icon_star from "./../assets/icon/star.svg";
 import icon_starfull from "./../assets/icon/star-full.svg";
@@ -38,27 +39,31 @@ export default function Logement() {
             ) : (
               <img src={icon_starfull} />
             )}
-            {focusdata.rating < 1 ? (
+            {focusdata.rating <= 1 ? (
               <img src={icon_star} />
             ) : (
               <img src={icon_starfull} />
             )}
-            {focusdata.rating < 2 ? (
+            {focusdata.rating <= 2 ? (
               <img src={icon_star} />
             ) : (
               <img src={icon_starfull} />
             )}
-            {focusdata.rating < 3 ? (
+            {focusdata.rating <= 3 ? (
               <img src={icon_star} />
             ) : (
               <img src={icon_starfull} />
             )}
-            {focusdata.rating < 4 ? (
+            {focusdata.rating <= 4 ? (
               <img src={icon_star} />
             ) : (
               <img src={icon_starfull} />
             )}
           </div>
+        </div>
+        <div className="logement-information-container-input">
+          <Input_list data={focusdata.equipments} />
+          <Input_list data={focusdata.description} />
         </div>
       </section>
     </>
