@@ -2,17 +2,13 @@ import Block_Logement from "./../components/block_logement";
 import Banner from "./../components/banner";
 import "./../styles/index.css";
 import React from "react";
+import mockeddata from "./../assets/data/logements.json";
 
 export default function Index() {
   let data = {
     type: "visible",
   };
-
-  /* 
-  let nbrblocklogement = 5;
-  nbrblocklogement % 3 = 2
-  hidden last
-  */
+  let x = 0;
   return (
     <>
       <div>
@@ -20,10 +16,20 @@ export default function Index() {
       </div>
 
       <div className="list-logement">
-        <Block_Logement data={data} />
-        <Block_Logement data={data} />
-        <Block_Logement data={data} />
-        <Block_Logement data={data} />
+        {mockeddata.map((element) => {
+          x++;
+          if (mockeddata.length % 3 === 2 && x === mockeddata.length) {
+            //Ajout element caché pour l'alignement via flex
+            return (
+              <>
+                <Block_Logement data={element} />
+                <Block_Logement data={element} hidden={true} />
+              </>
+            );
+          } else {
+            return <Block_Logement data={element} />;
+          }
+        })}
       </div>
     </>
   );

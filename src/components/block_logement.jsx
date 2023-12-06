@@ -1,17 +1,19 @@
 import "./../styles/block_logement.css";
 export default function Block_logement({ data, hidden }) {
-  //console.log(data.type);
-  //console.log(hidden);
+  function handleClick() {
+    window.location = "/logement?id=" + data.id;
+  }
   return (
     <>
       <article
         className={
           hidden === true ? "container-logement -hidden" : "container-logement"
         }
+        onClick={handleClick}
       >
+        <img src={data.cover} />
         <div className="container-logement-about">
-          <p>Titre</p>
-          <p>De la location</p>
+          <p>{data.title}</p>
         </div>
       </article>
     </>
