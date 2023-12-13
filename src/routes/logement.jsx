@@ -8,6 +8,7 @@ export default function Logement() {
   let id = searchParams.get("id");
 
   let focusdata = mockeddata.find((x) => x.id === id);
+  if (focusdata === undefined) window.location = "/id-undefined";
   console.log(focusdata);
   return (
     <>
