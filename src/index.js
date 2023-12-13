@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./styles/normalyze.css";
 import App from "./App";
 import Router from "./router";
 import Header from "./components/header";

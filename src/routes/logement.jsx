@@ -3,6 +3,7 @@ import Input_list from "../components/input_list";
 import mockeddata from "./../assets/data/logements.json";
 import icon_star from "./../assets/icon/star.svg";
 import icon_starfull from "./../assets/icon/star-full.svg";
+import Carroussel from "./../components/carroussel";
 export default function Logement() {
   const searchParams = new URLSearchParams(window.location.search);
   let id = searchParams.get("id");
@@ -13,9 +14,8 @@ export default function Logement() {
   return (
     <>
       <section id="section-logement">
-        <div id="logement-carroussel">
-          <img src={focusdata.pictures[0]} />
-        </div>
+        <Carroussel arrayImg={focusdata.pictures} />
+
         <div className="logement-information">
           <div>
             <p className="logement-information-title">{focusdata.title}</p>
