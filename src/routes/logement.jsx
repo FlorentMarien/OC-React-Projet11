@@ -15,24 +15,24 @@ export default function Logement() {
     <>
       <section id="section-logement">
         <Carroussel arrayImg={focusdata.pictures} />
-
+        <div className="logement">
         <div className="logement-information">
-          <div>
+          <div className="logement-information-title">
             <p className="logement-information-title">{focusdata.title}</p>
             <p className="logement-information-location">
               {focusdata.location}
             </p>
           </div>
-          <div className="logement-information-container-host">
-            <p>{focusdata.host.name}</p>
-            <img src={focusdata.host.picture} />
-          </div>
-        </div>
-        <div className="logement-information">
           <div className="logement-information-tag">
             {focusdata.tags.map((element) => {
               return <span className="tag-span">{element}</span>;
             })}
+          </div>
+        </div>
+        <div className="logement-information-autor">
+          <div className="logement-information-container-host">
+            <p>{focusdata.host.name}</p>
+            <img src={focusdata.host.picture} />
           </div>
           <div className="logement-information-rating">
             {focusdata.rating === 0 ? (
@@ -61,6 +61,7 @@ export default function Logement() {
               <img src={icon_starfull} />
             )}
           </div>
+        </div>
         </div>
         <div className="logement-information-container-input">
           <Input_list data={focusdata.equipments} />

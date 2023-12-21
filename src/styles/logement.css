@@ -10,11 +10,12 @@
   height: 643px;
   position: relative;
 }
-.logement-information {
+.logement-information,.logement-information-autor {
   display: flex;
   font-family: Montserrat;
   color: rgba(255, 96, 96, 1);
   justify-content: space-between;
+  flex-direction: column;
 }
 .logement-information-title {
   font-weight: 500;
@@ -43,6 +44,7 @@ p {
   display: flex;
   gap: 5px;
   align-items: center;
+  height: 33.6334px;
 }
 .tag-span {
   background-color: rgba(255, 96, 96, 1);
@@ -69,4 +71,32 @@ p {
 .logement-information-container-input {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+.logement-information-container-input > div{
+  width: 100%;
+  max-width: 582px;
+}
+.logement{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 830px) {
+  .logement-information-container-input {
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logement{
+    flex-wrap:wrap;
+  }
+  .logement-information-autor{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .logement-carroussel{
+    height: 335px;
+  }
 }

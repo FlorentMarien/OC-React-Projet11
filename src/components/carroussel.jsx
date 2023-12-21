@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 export default function Banner({ arrayImg }) {
   let [indexImg, setindexImg] = useState(0);
+  console.log(arrayImg.length)
   function carrousselBack() {
     indexImg === 0
       ? setindexImg(arrayImg.length - 1)
@@ -20,17 +21,24 @@ export default function Banner({ arrayImg }) {
   return (
     <>
       <div className="logement-carroussel">
-        <img
+        {
+          arrayImg.length > 1 && 
+          <img
           className="carroussel-back"
           src={arrowLeft}
           onClick={carrousselBack}
         />
+        }
         <img className="carroussel-img" src={arrayImg[indexImg]} />
-        <img
+        {
+          arrayImg.length > 1 &&
+          <img
           className="carroussel-forward"
           src={arrowRight}
           onClick={carrousselForward}
         />
+        }
+        
       </div>
     </>
   );

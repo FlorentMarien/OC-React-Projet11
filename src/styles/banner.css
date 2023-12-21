@@ -3,7 +3,7 @@
   src: url("./../assets/police/static/Montserrat-Medium.ttf") format(truetype);
 }
 .container-banner {
-  width: 1240px;
+  width: 100%;
   height: 223px;
   display: flex;
   justify-content: center;
