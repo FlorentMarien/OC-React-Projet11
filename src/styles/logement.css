@@ -45,6 +45,7 @@ p {
   gap: 5px;
   align-items: center;
   height: 33.6334px;
+  flex-wrap: wrap;
 }
 .tag-span {
   background-color: rgba(255, 96, 96, 1);
@@ -52,12 +53,12 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
-  width: 135px;
   height: 25px;
   line-height: 19.86px;
   font-weight: 500;
   font-size: 14px;
   border-radius: 10px;
+  min-width: 135px;
 }
 .logement-information-rating {
   display: flex;
@@ -98,5 +99,8 @@ p {
   }
   .logement-carroussel{
     height: 335px;
+  }
+  .logement ,.logement-information{
+    gap: 15px;
   }
 }

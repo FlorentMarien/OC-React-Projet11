@@ -24,12 +24,12 @@ header p img {
   position: relative;
   top: 11px;
 }
-header navbar ul {
+header nav ul {
   display: flex;
   gap: 57px;
   padding-left: 0;
 }
-header navbar ul li {
+header nav ul li {
   list-style: none;
   width: 136px;
   text-align: right;
@@ -37,7 +37,7 @@ header navbar ul li {
   font-weight: 500;
   line-height: 34.22px;
 }
-header navbar ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #ff6060;
 }
@@ -49,21 +49,21 @@ header navbar ul li + li {
 }
 
 @media (max-width: 500px) {
-  header navbar ul li a {
+  header nav ul li a {
     text-transform: uppercase;
   }
   header p {
     font-size: 37px;
   }
-  header navbar ul {
+  header nav ul {
     gap: 26px;
   }
-  header navbar ul li {
+  header nav ul li {
     width: auto;
     font-size: 12px;
     line-height: 17.11px;
   }
-  header navbar ul li + li {
+  header nav ul li + li {
     width: auto;
   }
   header p img {

@@ -4,15 +4,18 @@ import mockeddata from "./../assets/data/logements.json";
 import icon_star from "./../assets/icon/star.svg";
 import icon_starfull from "./../assets/icon/star-full.svg";
 import Carroussel from "./../components/carroussel";
+import { useEffect } from "react";
 export default function Logement() {
+  
   const searchParams = new URLSearchParams(window.location.search);
   let id = searchParams.get("id");
-
   let focusdata = mockeddata.find((x) => x.id === id);
   if (focusdata === undefined) window.location = "/id-undefined";
-  console.log(focusdata);
+
   return (
     <>
+      {
+        focusdata !== undefined &&
       <section id="section-logement">
         <Carroussel arrayImg={focusdata.pictures} />
         <div className="logement">
@@ -68,6 +71,8 @@ export default function Logement() {
           <Input_list data={focusdata.description} />
         </div>
       </section>
+    }
     </>
   );
+            
 }

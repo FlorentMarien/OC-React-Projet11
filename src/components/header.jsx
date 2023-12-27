@@ -11,7 +11,7 @@ export default function Header() {
           <img src={Logo} />
           sa
         </p>
-        <navbar>
+        <nav>
           <ul>
             <li>
               <a href="/" className={queue_url === "" ? "nav-active" : ""}>
@@ -27,7 +27,7 @@ export default function Header() {
               </a>
             </li>
           </ul>
-        </navbar>
+        </nav>
       </header>
     </>
   );
