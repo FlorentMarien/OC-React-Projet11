@@ -31,3 +31,18 @@
   width: 20px;
   height: 20px;
 }
+@media only screen and (max-width: 830px) {
+  .input-listbox {
+    font-size: 13px;
+    line-height: 18.54px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .list-listbox{
+    font-size: 13px;
+    line-height: 18.54px;
+  }
+  .input-listbox,.list-listbox{
+    padding: 5px 10px 5px 5px;
+  }
+}

@@ -24,10 +24,14 @@
 @media only screen and (max-width: 830px) {
   .carroussel-back {
     left: 0;
-    top: 142.5px;
+    top: 107.5px;
+  }
+  .carroussel-forward,.carroussel-back{
+    width: 30px;
+    height: 30px;
   }
   .carroussel-forward {
     right: 0;
-    top: 142.5px;
+    top: 107.5px;
   }
 }

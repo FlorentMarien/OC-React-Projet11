@@ -50,3 +50,8 @@
   position: absolute;
   border-radius: 10px;
 }
+@media only screen and (max-width: 830px) {
+  .container-logement,.container-logement::before,.container-logement img{
+    height: 255px;
+  }
+}

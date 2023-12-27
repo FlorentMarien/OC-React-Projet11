@@ -24,3 +24,20 @@
   font-size: 20px;
   color: rgba(255, 96, 96, 1);
 }
+@media only screen and (max-width: 830px) {
+  #error-page h1 {
+    font-size: 96px;
+    line-height: 136.9px
+  }
+  #error-page h1 + p{
+    font-size: 18px;
+    line-height: 25.67px;
+    width: 80%;
+    text-align: center;
+  }
+  #error-page h1 + p + a{
+    
+    font-size: 14px;
+    line-height: 19.96px;
+  }
+}

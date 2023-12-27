@@ -98,9 +98,39 @@ p {
     width: 100%;
   }
   .logement-carroussel{
-    height: 335px;
+    height: 255px;
   }
   .logement ,.logement-information{
     gap: 15px;
+  }
+  .logement-information-title{
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+  .logement-information-location{
+    font-size: 14px;
+    line-height: 19.96px;
+  }
+  .tag-span{
+  font-size:10px;
+  line-height: 14.26px;
+
+  min-width: 85px;
+  height: 18px;
+  }
+  .logement-information-autor{
+    height: 33px;
+  }
+  .logement-information-rating img{
+    width: 18px;
+  padding: 1px;
+  }
+  .logement-information-container-host img{
+    width: 32px;
+    height: 32px;
+  }
+  .logement-information-container-host p{
+    font-size: 12px;
+    line-height: 17.11px;
   }
 }
